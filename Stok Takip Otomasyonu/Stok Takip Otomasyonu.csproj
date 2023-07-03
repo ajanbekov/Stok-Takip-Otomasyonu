@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{EB5F8B9C-1580-4256-9194-D10A2B506A79}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Stok_Takip_Otomasyonu</RootNamespace>
+    <AssemblyName>Stok Takip Otomasyonu</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.VisualBasic.Compatibility" />
+    <Reference Include="stdole, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ajSatis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ajSatis.Designer.cs">
+      <DependentUpon>ajSatis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmKategori.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmKategori.Designer.cs">
+      <DependentUpon>FrmKategori.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMarka.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMarka.Designer.cs">
+      <DependentUpon>FrmMarka.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMüşteriEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMüşteriEkle.Designer.cs">
+      <DependentUpon>FrmMüşteriEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMüşteriListele.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMüşteriListele.Designer.cs">
+      <DependentUpon>frmMüşteriListele.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSatışListele.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSatışListele.Designer.cs">
+      <DependentUpon>frmSatışListele.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmÜrünEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmÜrünEkle.Designer.cs">
+      <DependentUpon>FrmÜrünEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmÜrünListele.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmÜrünListele.Designer.cs">
+      <DependentUpon>frmÜrünListele.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="ajSatis.resx">
+      <DependentUpon>ajSatis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmKategori.resx">
+      <DependentUpon>FrmKategori.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMarka.resx">
+      <DependentUpon>FrmMarka.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMüşteriEkle.resx">
+      <DependentUpon>FrmMüşteriEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMüşteriListele.resx">
+      <DependentUpon>frmMüşteriListele.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSatışListele.resx">
+      <DependentUpon>frmSatışListele.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmÜrünEkle.resx">
+      <DependentUpon>FrmÜrünEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmÜrünListele.resx">
+      <DependentUpon>frmÜrünListele.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Stok Takip Otomasyonu İçin Arka Plan Resmi.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Stok Takip Otomasyonu Arka Plan Resmi.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
